@@ -1,0 +1,67 @@
+https://takeuforward.org/graph/introduction-to-graph/
+
+Introduction to Graph : 
+
+1.What is a graph data structure?
+There are two types of data structures
+
+i.Linear
+ii.Non – linear
+We are aware of linear data structures such as arrays, stacks, queues, and linked lists. They are called linear because data elements are arranged in a linear or sequential manner.
+
+The only non-linear data structure that we’ve seen so far is Tree. In fact, a tree is a special type of graph with some restrictions. Graphs are data structures that have a wide-ranging application in real life. These include analysis of electrical circuits, finding the shortest routes between two places, building navigation systems like Google Maps, even social media using graphs to store data about each user, etc. To understand and use the graph data structure, let’s get familiar with the definitions and terms associated with graphs. 
+
+2.Definitions and Terminology:
+
+i.A graph is a non-linear data structure consisting of nodes that have data and are connected to other nodes through edges.
+
+ii.Nodes are circles represented by numbers. Nodes are also referred to as vertices. They store the data. The numbering of the nodes can be done in any order, no specific order needs to be followed.
+
+iii.Two nodes are connected by a horizontal line called Edge. Edge can be directed or undirected. Basically, pairs of vertices are called edges.
+bidirectional edge can be in both directions, hence called an undirected edge. Thus, the pairs (1,4) and (4,1) represent the same edge.
+
+
+
+3.Types of Graphs: 
+
+i.An undirected graph is a graph where edges are bidirectional, with no direction associated with them, i.e, there will be an undirected edge. In an undirected graph, the pair of vertices representing any edge is unordered. Thus, the pairs (u, v) and (v, u) represent the same edge.
+
+ii.A directed graph is a graph where all the edges are directed from one vertex to another, i.e, there will be a directed edge. It contains an ordered pair of vertices. It implies each edge is represented by a directed pair <u, v>. Therefore, <u, v> and <v, u> represent two different edges.
+
+
+4.Structure of Graph :
+
+i.So a graph does not necessarily mean to be an enclosed structure, it can be an open structure as well. A graph is said to have a cycle if it starts from a node and ends at the same node. There can be multiple cycles in a graph.
+
+ii.If there is at least one cycle present in the undirected graph then it is called an Undirected Cyclic Graph. If directed graph is not cyclic as we can’t start from a node and end at the same node. Hence it is called Directed Acyclic Graph, commonly called DAG.
+
+iii.If we just add an edge to the directed graph, then at least one cycle is present in the graph, hence it becomes Directed Cyclic Graph.
+
+
+5.Path in a Graph  :
+
+The path contains a lot of nodes and each of them is reachable.
+In the below graph : (1,2),(2,3),(3,4),(3,5)
+
+i. 1 2 3 5 is a path.
+ii. 1 2 3 2 1 is not a path, because a node can’t appear twice in a path.
+iii. 1 3 5 is not a path, as adjacent nodes must have an edge and there is no edge between 1 and 3.
+
+
+6.Degree of Graph: 
+
+It is the number of edges that go inside or outside that node.
+
+For undirected graphs, the degree is the number of edges attached to a node.
+
+7.Property: 
+
+Property: It states that the total degree of a graph is equal to twice the number of edges. This is because every edge is associated/ connected to two nodes
+In the example: (1,2),(2,3),(3,4),(4,5),(5,1),(5,3)
+Total Degree of a graph = 2 x E = 2 x 6 => 12 = 12 .
+
+For directed graphs, we’ve Indegree and Outdegree. The indegree of a node is the number of incoming edges. The outdegree of a node is the number of outgoing edges.
+
+8.Edge Weight:
+
+A graph may have weights assigned on its edges. It is often referred to as the cost of the edge.If weights are not assigned then we assume the unit weight, i.e, 1. In applications, weight may be a measure of the cost of a route. For example, if vertices A and B represent towns in a road network, then weight on edge AB may represent the cost of moving from A to B, or vice versa.
